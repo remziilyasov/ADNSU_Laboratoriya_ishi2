@@ -1,0 +1,29 @@
+:root {
+    --yellow: #ffc600;
+    --direction: right;
+  }
+  .image1 .gallery2 {
+    display: flex;
+  }
+  .images img {
+    width: 17%;
+    height: auto;
+    margin: 10px 20px;
+  }
+  .images h2 {
+    text-align: center;
+  }
+  .images h2:before,
+  .images h2:after {
+    display: block;
+    content: "";
+    height: 10px;
+    background: linear-gradient(
+      to var(--direction, left),
+      var(--yellow),
+      transparent
+    );
+  }
+  .images h2:after {
+    --direction: right;
+  }
